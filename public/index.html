@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Realtime Comment System</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row mt-4">
+            <div class="col-md-12">
+                <h4><strong>Realtime Comment System using Node.js, Express, MongoDB, Socket.io, and Vanilla Js</strong></h4>
+            </div>
+        </div>
+
+        <div class="row mb-4">
+            <div class="col-md-12">
+                <h4 class="border-bottom pb2">Comments</h4>
+            </div>
+            <div class="col-md-12">
+                <div class="form-group">
+                    <label for="">Write a comment</label>
+                    <textarea id="textarea" rows="3" class="form-control"></textarea>
+                </div>
+            </div>
+            
+            <div class="col-md-12">
+                <button id="submitBtn" class="btn btn-primary float-right">Post Comment</button>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="typing text-success"></div>
+            <div class="col-md-12">
+                <ul class="comment__box">     
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+    <script src="/js/app.js"></script>
+</body>
+</html>
